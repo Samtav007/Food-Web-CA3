@@ -1,0 +1,335 @@
+/* styles.css */
+
+body {
+    background-image: url('B2.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    line-height: 1.6;
+    border: 1px solid #000;
+
+}
+
+header {
+    display: contents;
+    flex-shrink: 0;
+    background: rgba(47, 10, 153, 0.03);
+    background-color: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+    opacity: 50%;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    color: #FFFAFA;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    list-style-type: none;
+    padding: 0;
+    color: #FFFAFA;
+    text-align: center;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.568);
+    height: 10vh;
+    width: 100vw;
+}
+
+
+nav a {
+    display: inline;
+    margin-right: 10px;
+    color: #FFFAFA;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+
+}
+
+.logo {
+    max-width: 150px;
+    max-height: max-content;
+    border-radius: 100%;
+
+
+}
+
+main {
+    padding: 20px;
+}
+
+#searchbar {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+#searchContainer,
+#resultContainer {
+    margin-bottom: 20px;
+
+}
+
+#searchContainer h1,
+#resultContainer h2 {
+    color: #ffffff;
+    text-align: center;
+}
+
+#dishInput {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #cccccc;
+    font-size: 14px;
+
+}
+
+#submit {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff6347;
+    color: #ffffff;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+
+}
+
+#submit:hover {
+    background-color: #ff4327;
+}
+
+#dishName,
+#dishDescription {
+    font-size: 16px;
+    text-align: center;
+
+}
+
+#dishDescription:hover {
+    transform: scale(1.05);
+    transition: all .3s ease-in-out;
+
+}
+
+h3 {
+    color: aquamarine;
+}
+
+h2 {
+    color: rgb(255, 255, 255);
+}
+
+h1 {
+    text-align: center;
+    text-decoration: solid;
+    text-transform: uppercase;
+    font-size: xx-large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: oblique;
+
+    -webkit-text-stroke-color: rgb(25, 2, 126);
+    -webkit-text-stroke-width: 1px;
+
+}
+
+p {
+    color: white;
+}
+
+.Dish img {
+    width: 16rem;
+    height: 24rem;
+    border: solid black;
+    border-width: thin;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+#searchContainer {
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+#dish-table {
+    max-width: fit-content;
+    margin: auto;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+
+.Dish {
+
+    background-color: #000000;
+    border: 1px solid #ff0000;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    width: 500px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.Dish h2 {
+    margin-bottom: 10px;
+}
+
+
+
+
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#popup {
+    height: 50%;
+    width: 50%;
+    display: none;
+    background-color: white;
+    position: fixed;
+    top: 10vw;
+    left: 20vw;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    transition: all .4s ease-in-out;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    z-index: 5;
+    overflow-y: scroll;
+
+}
+
+.Dish:hover {
+    transform: scale(1.05);
+}
+
+
+#popupContent {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#popup #ing {
+    font-size: 1em;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+#popup #recp {
+    text-align: justify;
+}
+
+#popup h3 {
+    margin-bottom: 5px;
+}
+
+h4 {
+    color: white;
+}
+
+.hot {
+    position: absolute;
+    top: 300px;
+    right: 200px;
+    width: 500px;
+    height: 500px;
+
+
+
+}
+
+.texd{
+    border-radius: 5px;
+    border: 3px solid red;
+    
+}
+
+p {
+    text-align: center;
+    text-decoration: solid;
+    text-transform: uppercase;
+    font-size: xx-large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: oblique;
+    -webkit-text-stroke-color: rgb(25, 2, 126);
+    -webkit-text-stroke-width: 1px;
+
+
+
+}
+
+img {
+    width: 500px;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    color: #ddd;
+    background: rgba(59, 59, 59, .8)
+}
+
+#contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 10px;
+    }
+
+    nav {
+        font-size: 20px;
+    }
+
+    #searchbar {
+        padding: 20px;
+    }
+
+    .hot {
+        display: fixed;
+    }
+
+    .Dish {
+        width: 100%;
+    }
+
+    #dish-table {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #popup {
+        width: 80%;
+        left: 10%;
+    }
